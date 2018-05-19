@@ -27,6 +27,12 @@
 
 [core]
         excludesfile = m:/.gitignore_global
+        whitespace = false
+        autocrlf = false
+
+        diff = diff-highlight | less
+        log = diff-highlight | less
+        show = diff-highlight | less
 
 [color]
         branch = auto
