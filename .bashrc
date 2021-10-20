@@ -32,9 +32,15 @@ alias gs='git status'
 alias gl='git log --stat=120'
 alias gwtf='git log --follow -p' # file name
 
+# Homestead / VirtualBox
+alias vhalt='cd ~/Documents/Homestead && vagrant halt && cd -'
+alias vreload='cd ~/Documents/Homestead && vagrant reload --provision && cd -'
+alias vssh='cd ~/Documents/Homestead && vagrant ssh && cd -'
+alias vsuspend='cd ~/Documents/Homestead && vagrant suspend && cd -'
+alias vup='cd ~/Documents/Homestead && vagrant up && cd -'
+
 # Dev
 alias xphp="php -d xdebug.profiler_enable=On -d xdebug.profiler_output_dir=."
-
 xxddiff() ( f() ( xxd "$1" ; ); diff -y <(f "$1") <(f "$2") | colordiff; )
 
 function dt
